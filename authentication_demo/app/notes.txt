@@ -1,0 +1,76 @@
+LINKS
+-----
+
+Restful Authentication
+http://github.com/technoweenie/restful-authentication/tree/master
+
+
+
+CREATE YOUR APP
+---------------
+
+rails authentication
+
+cd authentication
+
+
+
+INSTALL THE RESTFUL AUTHENTICATION PLUGIN
+-----------------------------------------
+
+install the Restful Authentication plugin
+	script/plugin install git://github.com/technoweenie/restful-authentication.git
+
+rename restful-authentication to restful_authentication for Rails 2.1
+	mv vendor/plugins/restful-authentication vendor/plugins/restful_authentication
+
+creates your routes, controllers, helpers, models, views in one line
+	script/generate authenticated user sessions
+
+
+
+USE THE PLUGIN
+--------------
+
+rake db:create
+rake db:migrate
+
+mv public/index.html public/index.html.old
+
+script/generate controller home show
+script/generate controller secrets show
+
+add to config/routes.rb
+
+	map.resource :home
+	map.resource :secret
+  map.root :controller => "home", :action => "show" 
+
+paste into app/controllers/application_controller.rb
+	include AuthenticatedSystem
+
+add to protected controllers
+	before_filter :login_required
+	
+script/server
+
+
+
+OR USE HTTP AUTHENTICATION
+--------------------------
+
+paste into app/controllers/application_controller.rb
+
+	before_filter :http_basic_authentication
+	
+	  private
+  
+	  def http_basic_authentication
+	    authenticate_or_request_with_http_basic("Application Realm") do |username, password|
+	      username.eql?('russ') && password.eql?('russ')
+	    end
+	  end
+
+
+
+
