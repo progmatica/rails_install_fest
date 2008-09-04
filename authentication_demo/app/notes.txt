@@ -1,6 +1,9 @@
 LINKS
 -----
 
+techno weenie
+http://weblog.techno-weenie.net/
+
 Restful Authentication
 http://github.com/technoweenie/restful-authentication/tree/master
 
