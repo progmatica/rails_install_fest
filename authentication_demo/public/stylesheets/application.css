@@ -6,9 +6,7 @@ body { background-color: #004080; }
 #navigation ul li a { 
 	padding: 5px 15px;
 	background-color: #E6E6E6; 
-	border-top:1px solid #000; 
-	border-left:1px solid #000; 
-	border-right:1px solid #000; 
+	border: 1px solid #000; 
 	}
 
 #content { 

@@ -2068,3 +2068,206 @@ Rendering template within layouts/application
 Rendering home/show
   [4;36;1mUser Load (0.000287)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'russ') LIMIT 1[0m
 Completed in 0.01238 (80 reqs/sec) | Rendering: 0.00978 (78%) | DB: 0.00029 (2%) | 200 OK [http://localhost/]
+
+
+Processing HomeController#show (for 10.0.1.1 at 2008-09-05 00:13:34) [GET]
+  Session ID: a9620074631d376a384fa2ab02803ded
+  Parameters: {"action"=>"show", "controller"=>"home"}
+Filter chain halted as [:http_basic_authentication] rendered_or_redirected.
+Completed in 0.00073 (1362 reqs/sec) | Rendering: 0.00054 (73%) | DB: 0.00000 (0%) | 401 Unauthorized [http://74.65.140.93/]
+
+
+Processing HomeController#show (for 10.0.1.1 at 2008-09-05 00:13:39) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--62426831c1f500bbda5297ae4b83526ac3c1de65
+  Parameters: {"action"=>"show", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/show
+  [4;36;1mUser Load (0.000172)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'russ') LIMIT 1[0m
+Completed in 0.08128 (12 reqs/sec) | Rendering: 0.01249 (15%) | DB: 0.00017 (0%) | 200 OK [http://74.65.140.93/]
+
+
+Processing HomeController#show (for 75.90.176.88 at 2008-09-05 00:13:49) [GET]
+  Session ID: 1c2420ea853eabe36bb2d750c4a14907
+  Parameters: {"action"=>"show", "controller"=>"home"}
+Filter chain halted as [:http_basic_authentication] rendered_or_redirected.
+Completed in 0.00055 (1825 reqs/sec) | Rendering: 0.00039 (71%) | DB: 0.00000 (0%) | 401 Unauthorized [http://74.65.140.93/]
+
+
+Processing HomeController#show (for 75.90.176.88 at 2008-09-05 00:14:01) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--62426831c1f500bbda5297ae4b83526ac3c1de65
+  Parameters: {"action"=>"show", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.000133)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'russ') LIMIT 1[0m
+Completed in 0.01029 (97 reqs/sec) | Rendering: 0.00836 (81%) | DB: 0.00013 (1%) | 200 OK [http://74.65.140.93/]
+
+
+Processing SecretsController#show (for 10.0.1.1 at 2008-09-05 00:14:03) [GET]
+  Session ID: BAh7BzoMdXNlcl9pZDAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--b7415c4065028cff59684a25b0608335c1bb7d80
+  Parameters: {"action"=>"show", "controller"=>"secrets"}
+  [4;36;1mUser Load (0.000132)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'russ') LIMIT 1[0m
+Redirected to http://74.65.140.93:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0.00726 (137 reqs/sec) | DB: 0.00013 (1%) | 302 Found [http://74.65.140.93/secret]
+
+
+Processing SessionsController#new (for 10.0.1.1 at 2008-09-05 00:14:03) [GET]
+  Session ID: BAh7CDoMdXNlcl9pZDA6DnJldHVybl90byIML3NlY3JldCIKZmxhc2hJQzon
+QWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7
+AA==--6685ad72b420943db9402e5f4a217dcc357afd2d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;35;1mUser Load (0.000144)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'russ') LIMIT 1[0m
+Completed in 0.01143 (87 reqs/sec) | Rendering: 0.00954 (83%) | DB: 0.00014 (1%) | 200 OK [http://74.65.140.93/session/new]
+
+
+Processing HomeController#show (for 10.0.1.1 at 2008-09-05 00:14:05) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byIML3NlY3JldCIKZmxhc2hJQzon
+QWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7
+ADoMY3NyZl9pZCIlNDE3YjViZmY5NDczYzM0MTU3MjI0ZjE5MGUxZWFlMGY=--fb8e06f43531e8af9029499e2f76a4f0d3796f63
+  Parameters: {"action"=>"show", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/show
+  [4;36;1mUser Load (0.000139)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'russ') LIMIT 1[0m
+Completed in 0.01246 (80 reqs/sec) | Rendering: 0.01031 (82%) | DB: 0.00014 (1%) | 200 OK [http://74.65.140.93/]
+
+
+Processing SecretsController#show (for 75.90.176.88 at 2008-09-05 00:14:13) [GET]
+  Session ID: BAh7BzoMdXNlcl9pZDAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--b7415c4065028cff59684a25b0608335c1bb7d80
+  Parameters: {"action"=>"show", "controller"=>"secrets"}
+  [4;35;1mUser Load (0.000151)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'russ') LIMIT 1[0m
+Redirected to http://74.65.140.93:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0.00744 (134 reqs/sec) | DB: 0.00015 (2%) | 302 Found [http://74.65.140.93/secret]
+
+
+Processing SessionsController#new (for 75.90.176.88 at 2008-09-05 00:14:14) [GET]
+  Session ID: BAh7CDoMdXNlcl9pZDA6DnJldHVybl90byIML3NlY3JldCIKZmxhc2hJQzon
+QWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7
+AA==--6685ad72b420943db9402e5f4a217dcc357afd2d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mUser Load (0.000128)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'russ') LIMIT 1[0m
+Completed in 0.01037 (96 reqs/sec) | Rendering: 0.00841 (81%) | DB: 0.00013 (1%) | 200 OK [http://74.65.140.93/session/new]
+
+
+Processing UsersController#new (for 75.90.176.88 at 2008-09-05 00:14:16) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byIML3NlY3JldCIKZmxhc2hJQzon
+QWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7
+ADoMY3NyZl9pZCIlODIwZTZhOTRmYjdiMmY2ZGUyMTg4ZTNkZWFkZmIyMjA=--19b414c083eec0a714b47d5595e68ed316eb4404
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.000184)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'russ') LIMIT 1[0m
+Completed in 0.01353 (73 reqs/sec) | Rendering: 0.00494 (36%) | DB: 0.00018 (1%) | 200 OK [http://74.65.140.93/signup]
+
+
+Processing UsersController#create (for 75.90.176.88 at 2008-09-05 00:14:34) [POST]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byIML3NlY3JldCIKZmxhc2hJQzon
+QWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7
+ADoMY3NyZl9pZCIlODIwZTZhOTRmYjdiMmY2ZGUyMTg4ZTNkZWFkZmIyMjA=--19b414c083eec0a714b47d5595e68ed316eb4404
+  Parameters: {"user"=>{"password_confirmation"=>"es78224z", "login"=>"evan", "password"=>"es78224z", "email"=>"esparkman@esdezines.com"}, "commit"=>"Sign up", "authenticity_token"=>"494d02e977bd0d06ccaeca055755874717ff1df8", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000128)[0m   [0;1mSELECT "login" FROM "users" WHERE ("users".login = 'evan') [0m
+  [4;35;1mSQL (0.000061)[0m   [0mSELECT "email" FROM "users" WHERE ("users".email = 'esparkman@esdezines.com') [0m
+  [4;36;1mUser Create (0.000489)[0m   [0;1mINSERT INTO "users" ("name", "salt", "updated_at", "crypted_password", "remember_token_expires_at", "remember_token", "login", "email", "created_at") VALUES('', 'd4265a254e26d4cb77ab9d567907b8065253511d', '2008-09-05 04:14:34', 'd62a116818cc36e8195eb42a39483df76e18dded', NULL, NULL, 'evan', 'esparkman@esdezines.com', '2008-09-05 04:14:34')[0m
+Redirected to http://74.65.140.93:3000/secret
+Completed in 0.11720 (8 reqs/sec) | DB: 0.00068 (0%) | 302 Found [http://74.65.140.93/users]
+
+
+Processing SecretsController#show (for 75.90.176.88 at 2008-09-05 00:14:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkHOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSJSVGhhbmtz
+IGZvciBzaWduaW5nIHVwISAgV2UncmUgc2VuZGluZyB5b3UgYW4gZW1haWwg
+d2l0aCB5b3VyIGFjdGl2YXRpb24gY29kZS4GOgpAdXNlZHsGOwhGOgxjc3Jm
+X2lkIiU4MjBlNmE5NGZiN2IyZjZkZTIxODhlM2RlYWRmYjIyMA==--cfa6b78c1fa548557f0c22e02346fb8f73696548
+  Parameters: {"action"=>"show", "controller"=>"secrets"}
+  [4;35;1mUser Load (0.000238)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering secrets/show
+Completed in 0.01121 (89 reqs/sec) | Rendering: 0.00160 (14%) | DB: 0.00024 (2%) | 200 OK [http://74.65.140.93/secret]
+
+
+Processing HomeController#show (for 75.90.176.88 at 2008-09-05 00:14:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkHOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSJSVGhhbmtz
+IGZvciBzaWduaW5nIHVwISAgV2UncmUgc2VuZGluZyB5b3UgYW4gZW1haWwg
+d2l0aCB5b3VyIGFjdGl2YXRpb24gY29kZS4GOgpAdXNlZHsGOwhUOgxjc3Jm
+X2lkIiU4MjBlNmE5NGZiN2IyZjZkZTIxODhlM2RlYWRmYjIyMA==--3c9191766050ad577709a38077c9cad9ca832a56
+  Parameters: {"action"=>"show", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/show
+  [4;36;1mUser Load (0.000249)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 0.01006 (99 reqs/sec) | Rendering: 0.00810 (80%) | DB: 0.00025 (2%) | 200 OK [http://74.65.140.93/]
+
+
+Processing HomeController#show (for 24.201.57.132 at 2008-09-05 00:15:21) [GET]
+  Session ID: 4501015debdc6707c88492660e00ad6f
+  Parameters: {"action"=>"show", "controller"=>"home"}
+Filter chain halted as [:http_basic_authentication] rendered_or_redirected.
+Completed in 0.00052 (1904 reqs/sec) | Rendering: 0.00038 (72%) | DB: 0.00000 (0%) | 401 Unauthorized [http://74.65.140.93/]
+
+
+Processing HomeController#show (for 24.201.57.132 at 2008-09-05 00:15:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--62426831c1f500bbda5297ae4b83526ac3c1de65
+  Parameters: {"action"=>"show", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/show
+  [4;35;1mUser Load (0.000128)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'russ') LIMIT 1[0m
+Completed in 0.00962 (103 reqs/sec) | Rendering: 0.00774 (80%) | DB: 0.00013 (1%) | 200 OK [http://74.65.140.93/]
+
+
+Processing UsersController#new (for 24.201.57.132 at 2008-09-05 00:15:33) [GET]
+  Session ID: BAh7BzoMdXNlcl9pZDAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--b7415c4065028cff59684a25b0608335c1bb7d80
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (0.000196)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'russ') LIMIT 1[0m
+Completed in 0.08161 (12 reqs/sec) | Rendering: 0.00390 (4%) | DB: 0.00020 (0%) | 200 OK [http://74.65.140.93/signup]
+
+
+Processing UsersController#create (for 24.201.57.132 at 2008-09-05 00:15:46) [POST]
+  Session ID: BAh7CDoMdXNlcl9pZDAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA6DGNzcmZfaWQiJTJkN2NhZDU4
+MzBlZjI0NjRlNTViNDUwZmU1N2FkNzQ4--d1e5c6289f0ba67f317e51b485574a23971711ee
+  Parameters: {"user"=>{"password_confirmation"=>"sikkle", "login"=>"sikkle", "password"=>"sikkle", "email"=>"sikkle@gmail.com"}, "commit"=>"Sign up", "authenticity_token"=>"d6e820239e981f244ba0545a10f355c3b1725e0a", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mSQL (0.000119)[0m   [0mSELECT "login" FROM "users" WHERE ("users".login = 'sikkle') [0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mSELECT "email" FROM "users" WHERE ("users".email = 'sikkle@gmail.com') [0m
+  [4;35;1mUser Create (0.000383)[0m   [0mINSERT INTO "users" ("name", "salt", "updated_at", "crypted_password", "remember_token_expires_at", "remember_token", "login", "email", "created_at") VALUES('', '2d7d4e3de0c97d6cd01b434e29dc5072a583842f', '2008-09-05 04:15:46', 'a871b97a1c1ccb15c02f7962ced7b5b888dcaee6', NULL, NULL, 'sikkle', 'sikkle@gmail.com', '2008-09-05 04:15:46')[0m
+Redirected to http://74.65.140.93:3000/
+Completed in 0.02457 (40 reqs/sec) | DB: 0.00057 (2%) | 302 Found [http://74.65.140.93/users]
+
+
+Processing HomeController#show (for 24.201.57.132 at 2008-09-05 00:15:46) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkIOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSJSVGhhbmtz
+IGZvciBzaWduaW5nIHVwISAgV2UncmUgc2VuZGluZyB5b3UgYW4gZW1haWwg
+d2l0aCB5b3VyIGFjdGl2YXRpb24gY29kZS4GOgpAdXNlZHsGOwhGOgxjc3Jm
+X2lkIiUyZDdjYWQ1ODMwZWYyNDY0ZTU1YjQ1MGZlNTdhZDc0OA==--6f1b402f5da6ef6cd2f3c23737d29cef1d9cc861
+  Parameters: {"action"=>"show", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/show
+  [4;36;1mUser Load (0.000245)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 0.01036 (96 reqs/sec) | Rendering: 0.00830 (80%) | DB: 0.00025 (2%) | 200 OK [http://74.65.140.93/]
+
+
+Processing SecretsController#show (for 24.201.57.132 at 2008-09-05 00:15:53) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkIOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSJSVGhhbmtz
+IGZvciBzaWduaW5nIHVwISAgV2UncmUgc2VuZGluZyB5b3UgYW4gZW1haWwg
+d2l0aCB5b3VyIGFjdGl2YXRpb24gY29kZS4GOgpAdXNlZHsGOwhUOgxjc3Jm
+X2lkIiUyZDdjYWQ1ODMwZWYyNDY0ZTU1YjQ1MGZlNTdhZDc0OA==--194084054c537787a7dd62b4a81d36c11619b33c
+  Parameters: {"action"=>"show", "controller"=>"secrets"}
+  [4;35;1mUser Load (0.000236)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering secrets/show
+Completed in 0.00965 (103 reqs/sec) | Rendering: 0.00109 (11%) | DB: 0.00024 (2%) | 200 OK [http://74.65.140.93/secret]
