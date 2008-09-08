@@ -1,0 +1,36 @@
+# Logfile created on Mon Sep 08 16:47:50 -0400 2008  [4;36;1mSQL (0.000890)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000532)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.043149)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.013268)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000891)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000601)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20080906193945)
+  [4;36;1mSQL (0.017766)[0m   [0;1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.044786)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080906193945')[0m
+  [4;36;1mSQL (0.001394)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.005354)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001237)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000296)[0m   [0mPRAGMA index_list("posts")[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2008-09-08 16:49:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODM1MTU0OWFjZjFkNzkzMDkxZGYxOGQ0YzU1YjBj
+ZWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--6f6c8626f38ac589897ff1a7a589b9c0ab4e54ab
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.002548)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 0.23357 (4 reqs/sec) | Rendering: 0.20703 (88%) | DB: 0.00255 (1%) | 200 OK [http://localhost/]
