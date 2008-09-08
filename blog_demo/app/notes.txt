@@ -1,0 +1,27 @@
+CREATE YOUR APP
+---------------
+
+rails blog
+
+cd blog
+
+script/generate scaffold post title:string body:text
+
+add to config/routes.rb
+
+	map.resources :posts
+	map.root :controller => "posts"
+	
+mv public/index.html public/index.html.old
+
+add to app/models/posts.rb
+
+  validates_presence_of :title
+  validates_presence_of :body
+
+rake db:create
+rake db:migrate
+
+customize your layout, index and show views
+
+script/server

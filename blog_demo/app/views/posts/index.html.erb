@@ -1,0 +1,8 @@
+<% for post in @posts %>
+	<h2><%=link_to h(post.title), post %></h2>
+	<small><%= h post.created_at.strftime("%B %d, %Y") %></small>
+	<%= simple_format truncate(h(post.body), 150) %>
+	<%= link_to 'Edit', edit_post_path(post) %>
+	<%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+	<br>
+<% end %>
